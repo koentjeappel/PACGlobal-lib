@@ -1,4 +1,4 @@
-# Dashcore examples
+# PACGlobal examples
 
 
 ## Create and Save a Private Key

@@ -1,17 +1,17 @@
 # Script
-All Dash transactions have scripts embedded into its inputs and outputs.  The scripts use a very simple programming language, which is evaluated from left to right using a stack. The language is designed such that it guarantees all scripts will execute in a limited amount of time (it is not Turing-Complete).
+All PACGlobal transactions have scripts embedded into its inputs and outputs.  The scripts use a very simple programming language, which is evaluated from left to right using a stack. The language is designed such that it guarantees all scripts will execute in a limited amount of time (it is not Turing-Complete).
 
 When a transaction is validated, the input scripts are concatenated with the output scripts and evaluated. To be valid, all transaction scripts must evaluate to true.  A good analogy for how this works is that the output scripts are puzzles that specify in which conditions can those funds be spent. The input scripts provide the correct data to make those output scripts evaluate to true.
 
-For more detailed information about the Dash scripting language, check the online reference [on Bitcoin's wiki](https://en.bitcoin.it/wiki/Script).
+For more detailed information about the PACGlobal scripting language, check the online reference [on Bitcoin's wiki](https://en.bitcoin.it/wiki/Script).
 
-The `Script` object provides an interface to construct, parse, and identify Dash scripts. It also gives simple interfaces to create most common script types. This class is useful if you want to create custom input or output scripts. In other case, you should probably use `Transaction`.
+The `Script` object provides an interface to construct, parse, and identify PACGlobal scripts. It also gives simple interfaces to create most common script types. This class is useful if you want to create custom input or output scripts. In other case, you should probably use `Transaction`.
 
 ## Script creation
 Here's how to use `Script` to create the five most common script types:
 
 ### Pay to Public Key Hash (p2pkh)
-This is the most commonly used transaction output script. It's used to pay to a Dash address (a Dash address is a public key hash encoded in base58check)
+This is the most commonly used transaction output script. It's used to pay to a PACGlobal address (a PACGlobal address is a public key hash encoded in base58check)
 
 ```javascript
 // create a new p2pkh paying to a specific address
@@ -89,7 +89,7 @@ assert(script.toString() === 'OP_2SWAP OP_IF OP_NOT 4 0xbacacafe');
 ```
 
 ## Script Parsing and Identification
-`Script` has an easy interface to parse raw scripts from the network or dashd, and to extract useful information. An illustrative example (for more options check the API reference)
+`Script` has an easy interface to parse raw scripts from the network or pacglobald, and to extract useful information. An illustrative example (for more options check the API reference)
 
 ```javascript
 var raw_script = Buffer.from('5221022df8750480ad5b26950b25c7ba79d3e37d75f640f8e5d9bcd5b150a0f85014da2103e3818b65bcc73a7d64064106a859cc1a5a728c4345ff0b641209fba0d90de6e921021f2f6e1e50cb6a953935c3601284925decd3fd21bc445712576873fb8c6ebc1853ae', 'hex');
@@ -103,7 +103,7 @@ s.isMultisigOut() // true
 ```
 
 ## Script Interpreting and Validation
-To validate a transaction, the Dash network validates all of its inputs and outputs. To validate an input, the input's script is concatenated with the referenced output script, and the result is executed. If at the end of execution the stack contains a 'true' value, then the transaction is valid. You can do this in `Dashcore` by using the `Interpreter` class. The entry point (and probably the only interface you'll need for most applications) is the method `Interpreter#verify()`.
+To validate a transaction, the PACGlobal network validates all of its inputs and outputs. To validate an input, the input's script is concatenated with the referenced output script, and the result is executed. If at the end of execution the stack contains a 'true' value, then the transaction is valid. You can do this in `PACGlobal` by using the `Interpreter` class. The entry point (and probably the only interface you'll need for most applications) is the method `Interpreter#verify()`.
 
 You can use it like this:
 
