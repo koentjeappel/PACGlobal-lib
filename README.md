@@ -1,11 +1,11 @@
-# Dashcore Library
+# PACGlobal Library
 
-[![Build Status](https://img.shields.io/travis/dashevo/dashcore-lib.svg?branch=master)](https://travis-ci.org/dashevo/dashcore-lib)
-[![NPM Package](https://img.shields.io/npm/v/@dashevo/dashcore-lib.svg)](https://www.npmjs.org/package/@dashevo/dashcore-lib)
+[![Build Status](https://img.shields.io/travis/koentjeappel/PACGlobal-lib.svg?branch=master)](https://travis-ci.org/koentjeappel/PACGlobal-lib)
+[![NPM Package](https://img.shields.io/npm/v/PACGlobal-lib.svg)](https://www.npmjs.org/package/PACGlobal-lib)
 
-> A pure and powerful JavaScript Dash library.
+> A pure and powerful JavaScript PACGlobal library.
 
-Dash is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Dash network allows for highly resilient Dash infrastructure, and the developer community needs reliable, open-source tools to implement Dash apps and services.
+PACGlobal is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the PACGlobal network allows for highly resilient PACGlobal infrastructure, and the developer community needs reliable, open-source tools to implement PACGlobal apps and services.
 
 ## Table of Contents
 - [Install](#install)
@@ -19,31 +19,31 @@ Dash is a powerful new peer-to-peer platform for the next generation of financia
 ### NodeJS
 
 ```
-npm install @dashevo/dashcore-lib
+npm install PACGlobal-lib
 ```
 
 ### Browser
 
-See the section below to generate your own bundle, or download the pre-generated [minified file](dist/dashcore-lib.min.js)
+See the section below to generate your own bundle, or download the pre-generated [minified file](dist/pacglobal-lib.min.js)
 
 #### Building the Browser Bundle
 
-To build a dashcore-lib full bundle for the browser:
+To build a pacglobal-lib full bundle for the browser:
 
 ```sh
 npm run build
 ```
 
-This will generate files named `dashcore-lib.js` and `dashcore-lib.min.js` in the `dist/` folder.
+This will generate files named `pacglobal-lib.js` and `pacglobal-lib.min.js` in the `dist/` folder.
 
 ## Usage
 
 ### Browser
 
 ```
-<script src='./dist/dashcore-lib.min.js' type="text/javascript"></script>
+<script src='./dist/pacglobal-lib.min.js' type="text/javascript"></script>
 <script>
-  const PrivateKey = dashcore.PrivateKey;
+  const PrivateKey = pacglobal.PrivateKey;
   const privateKey = new PrivateKey();
   const address = privateKey.toAddress().toString();
 </script>
@@ -53,19 +53,19 @@ This will generate files named `dashcore-lib.js` and `dashcore-lib.min.js` in th
 
 Some functionality is implemented as a module that can be installed separately:
 
-* [Payment Protocol Support](https://github.com/dashevo/dashcore-payment-protocol)
-* [Peer to Peer Networking](https://github.com/dashevo/dashcore-p2p)
-* [Dash Core JSON-RPC](https://github.com/dashevo/dashd-rpc)
-* [Payment Channels](https://github.com/dashevo/dashcore-channel)
-* [Mnemonics](https://github.com/dashevo/dashcore-mnemonic)
-* [Elliptical Curve Integrated Encryption Scheme](https://github.com/dashevo/bitcore-ecies-dash)
-* [Signed Messages](https://github.com/dashevo/bitcore-message-dash)
+* [Payment Protocol Support](https://github.com/koentjeappel/PACGlobal-payment-protocol)
+* [Peer to Peer Networking](https://github.com/koentjeappel/PACGlobal-p2p)
+* [PACGlobal Core JSON-RPC](https://github.com/koentjeappel/pacglobald-rpc)
+* [Payment Channels](https://github.com/koentjeappel/PACGlobal-channel)
+* [Mnemonics](https://github.com/koentjeappel/PACGlobal-mnemonic)
+* [Elliptical Curve Integrated Encryption Scheme](https://github.com/koentjeappel/bitcore-ecies-pacglobal)
+* [Signed Messages](https://github.com/koentjeappel/bitcore-message-pacglobal)
 
 ### Development & Tests
 
 ```sh
-git clone https://github.com/dashevo/dashcore-lib
-cd dashcore-lib
+git clone https://github.com/koentjeappel/PACGlobal-lib
+cd pacglobal-lib
 npm install
 ```
 
@@ -103,20 +103,20 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 * [Generate an address from a SHA256 hash](docs/examples.md#generate-a-address-from-a-sha256-hash)
 * [Import an address via WIF](docs/examples.md#import-an-address-via-wif)
 * [Create a Transaction](docs/examples.md#create-a-transaction)
-* [Sign a Dash message](docs/examples.md#sign-a-bitcoin-message)
-* [Verify a Dash message](docs/examples.md#verify-a-bitcoin-message)
+* [Sign a PACGlobal message](docs/examples.md#sign-a-bitcoin-message)
+* [Verify a PACGlobal message](docs/examples.md#verify-a-bitcoin-message)
 * [Create an OP RETURN transaction](docs/examples.md#create-an-op-return-transaction)
 * [Create a 2-of-3 multisig P2SH address](docs/examples.md#create-a-2-of-3-multisig-p2sh-address)
 * [Spend from a 2-of-2 multisig P2SH address](docs/examples.md#spend-from-a-2-of-2-multisig-p2sh-address)
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/dashevo/dashcore-lib/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/koentjeappel/PACGlobal-lib/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
 Code released under [the MIT license](LICENSE).
 
 Copyright 2013-2017 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.  
-Copyright 2016-2017 The Dash Foundation, Inc.  
-Copyright 2017-2018 Dash Core Group, Inc.  
+Copyright 2016-2017 The PACGlobal Foundation, Inc.  
+Copyright 2017-2018 PACGlobal Core Group, Inc.  

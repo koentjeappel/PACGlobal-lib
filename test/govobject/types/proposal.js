@@ -152,12 +152,12 @@ describe('Proposal', function() {
     var proposal2 = new Proposal();
     proposal2.network = 'livenet';
     proposal2.end_epoch = endDate;
-    proposal2.name = 'Proposal-36-DashATM';
+    proposal2.name = 'Proposal-36-PACGlobalATM';
     proposal2.payment_address = '7Z7X2jaqMtzsr2oHpSn89cNaEC16DYByz3';
     proposal2.payment_amount = 1625.487;
     proposal2.start_epoch = startDate;
     proposal2.type = 1;
-    proposal2.url = "https://www.dashcentral.org/p/Proposal-36-DashATM";
+    proposal2.url = "https://www.dashcentral.org/p/Proposal-36-PACGlobalATM";
 
     expect(function() {
       return proposal.serialize();

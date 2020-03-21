@@ -1,4 +1,4 @@
-declare module "@dashevo/dashcore-lib" {
+declare module "PACGlobal-lib" {
     /**
      * Instantiate an address from an address String or Buffer, a public key or script hash Buffer,
      * or an instance of {@link PublicKey} or {@link Script}.
@@ -939,7 +939,7 @@ declare module "@dashevo/dashcore-lib" {
         fromString(string: any): void;
 
         /**
-         * Retrieve a hex string that can be used with dashd's CLI interface
+         * Retrieve a hex string that can be used with pacglobald's CLI interface
          *
          * @param {Object} opts allows to skip certain tests. {@see Transaction#serialize}
          * @return {string}
@@ -3951,7 +3951,7 @@ declare module "@dashevo/dashcore-lib" {
 
         /**
          * Randomize this transaction's outputs ordering. The shuffling algorithm is a
-         * version of the Fisher-Yates shuffle, provided by lodash's _.shuffle().
+         * version of the Fisher-Yates shuffle, provided by lopacglobal's _.shuffle().
          *
          * @return {Transaction} this
          */
@@ -4322,7 +4322,7 @@ declare module "@dashevo/dashcore-lib" {
      * @example
      * ```javascript
      *
-     * var uri = new URI('dash:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6?amount=1.2');
+     * var uri = new URI('pacglobal:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6?amount=1.2');
      * console.log(uri.address, uri.amount);
      * ```
      *
@@ -4359,7 +4359,7 @@ declare module "@dashevo/dashcore-lib" {
          * @example
          * ```javascript
          *
-         * var valid = URI.isValid('dash:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6');
+         * var valid = URI.isValid('pacglobal:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6');
          * // true
          * ```
          *
