@@ -243,7 +243,7 @@ git checkout -b remove/some-file
 
 We expect pull requests to be rebased to the master branch before merging:
 ```sh
-git remote add PACGlobal git@github.com:koentjeappel/PACGlobal-lib.git
+git remote add PACGlobal git@github.com:koentjeappel/pacglobal-lib.git
 git pull --rebase PACGlobal master
 ```
 
@@ -255,11 +255,11 @@ git push origin your_branch_name
 git push origin feature/some-new-stuff
 git push origin fix/some-bug
 ```
-Finally go to [github.com/koentjeappel/PACGlobal-lib](https://github.com/koentjeappel/PACGlobal-lib) in your web browser and issue a new pull request.
+Finally go to [github.com/koentjeappel/pacglobal-lib](https://github.com/koentjeappel/pacglobal-lib) in your web browser and issue a new pull request.
 
 Main contributors will review your code and possibly ask for changes before your code is pulled in to the main repository.  We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of pacglobal-lib.
 
 If you have any questions feel free to post them to
-[github.com/koentjeappel/PACGlobal-lib/issues](https://github.com/koentjeappel/PACGlobal-lib/issues).
+[github.com/koentjeappel/pacglobal-lib/issues](https://github.com/koentjeappel/pacglobal-lib/issues).
 
 Thanks for your time and code!

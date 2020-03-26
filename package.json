@@ -1,5 +1,5 @@
 {
-  "name": "PACGlobal-lib",
+  "name": "pacglobal-lib",
   "version": "0.18.0",
   "description": "A pure and powerful JavaScript PACGlobal library.",
   "author": "PACGlobal Core Group, Inc. <dev@dash.org>",
@@ -94,12 +94,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/koentjeappel/PACGlobal-lib.git"
+    "url": "https://github.com/koentjeappel/pacglobal-lib.git"
   },
   "bugs": {
-    "url": "https://github.com/koentjeappel/PACGlobal-lib/issues"
+    "url": "https://github.com/koentjeappel/pacglobal-lib/issues"
   },
-  "homepage": "https://github.com/koentjeappel/PACGlobal-lib",
+  "homepage": "https://github.com/koentjeappel/pacglobal-lib",
   "browser": {
     "request": "browser-request"
   },

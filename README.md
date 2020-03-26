@@ -1,7 +1,7 @@
 # PACGlobal Library
 
-[![Build Status](https://img.shields.io/travis/koentjeappel/PACGlobal-lib.svg?branch=master)](https://travis-ci.org/koentjeappel/PACGlobal-lib)
-[![NPM Package](https://img.shields.io/npm/v/PACGlobal-lib.svg)](https://www.npmjs.org/package/PACGlobal-lib)
+[![Build Status](https://img.shields.io/travis/koentjeappel/pacglobal-lib.svg?branch=master)](https://travis-ci.org/koentjeappel/pacglobal-lib)
+[![NPM Package](https://img.shields.io/npm/v/pacglobal-lib.svg)](https://www.npmjs.org/package/pacglobal-lib)
 
 > A pure and powerful JavaScript PACGlobal library.
 
@@ -19,7 +19,7 @@ PACGlobal is a powerful new peer-to-peer platform for the next generation of fin
 ### NodeJS
 
 ```
-npm install PACGlobal-lib
+npm install pacglobal-lib
 ```
 
 ### Browser
@@ -54,7 +54,7 @@ This will generate files named `pacglobal-lib.js` and `pacglobal-lib.min.js` in 
 Some functionality is implemented as a module that can be installed separately:
 
 * [Payment Protocol Support](https://github.com/koentjeappel/PACGlobal-payment-protocol)
-* [Peer to Peer Networking](https://github.com/koentjeappel/PACGlobal-p2p)
+* [Peer to Peer Networking](https://github.com/koentjeappel/pacglobal-p2p)
 * [PACGlobal Core JSON-RPC](https://github.com/koentjeappel/pacglobald-rpc)
 * [Payment Channels](https://github.com/koentjeappel/PACGlobal-channel)
 * [Mnemonics](https://github.com/koentjeappel/PACGlobal-mnemonic)
@@ -64,7 +64,7 @@ Some functionality is implemented as a module that can be installed separately:
 ### Development & Tests
 
 ```sh
-git clone https://github.com/koentjeappel/PACGlobal-lib
+git clone https://github.com/koentjeappel/pacglobal-lib
 cd pacglobal-lib
 npm install
 ```
@@ -111,7 +111,7 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/koentjeappel/PACGlobal-lib/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/koentjeappel/pacglobal-lib/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
