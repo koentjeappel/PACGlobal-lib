@@ -3,11 +3,11 @@
 
 var expect = require('chai').expect;
 var sinon = require('sinon');
-var PACGlobalLib = require('../../..');
+var PacglobalLib = require('../../..');
 
 var proUpRevTxFixture = require('../../fixtures/payload/prouprevtxpayload');
 
-var Payload = PACGlobalLib.Transaction.Payload;
+var Payload = PacglobalLib.Transaction.Payload;
 var ProUpRevTxPayload = Payload.ProUpRevTxPayload;
 
 describe('ProUpRevTxPayload', function () {

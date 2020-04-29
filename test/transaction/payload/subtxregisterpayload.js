@@ -3,13 +3,13 @@
 
 var expect = require('chai').expect;
 
-var PACGlobalLib = require('../../../index');
+var PacglobalLib = require('../../../index');
 
-var PrivateKey = PACGlobalLib.PrivateKey;
-var BufferUtil = PACGlobalLib.util.buffer;
-var Payload = PACGlobalLib.Transaction.Payload;
+var PrivateKey = PacglobalLib.PrivateKey;
+var BufferUtil = PacglobalLib.util.buffer;
+var Payload = PacglobalLib.Transaction.Payload;
 var SubTxRegisterPayload = Payload.SubTxRegisterPayload;
-var isHexString = PACGlobalLib.util.js.isHexaString;
+var isHexString = PacglobalLib.util.js.isHexaString;
 
 var CORRECT_SIGNATURE_SIZE = Payload.constants.COMPACT_SIGNATURE_SIZE;
 var privateKey = 'cSBnVM4xvxarwGQuAfQFwqDg9k5tErHUHzgWsEfD4zdwUasvqRVY';

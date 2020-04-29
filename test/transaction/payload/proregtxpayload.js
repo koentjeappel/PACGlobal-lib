@@ -6,9 +6,9 @@ var sinon = require('sinon');
 
 var proRegTxFixture = require('../../fixtures/payload/proregtxpayload');
 
-var PACGlobalLib = require('../../../index');
+var PacglobalLib = require('../../../index');
 
-var ProRegTxPayload = PACGlobalLib.Transaction.Payload.ProRegTxPayload;
+var ProRegTxPayload = PacglobalLib.Transaction.Payload.ProRegTxPayload;
 
 describe('ProRegTxPayload', function () {
   beforeEach(function () {

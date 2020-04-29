@@ -4,10 +4,10 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var PACGlobalLib = require('../../../index');
+var PacglobalLib = require('../../../index');
 var proUpServTxFixture = require('../../fixtures/payload/proupservpayload');
 
-var ProTxUpServPayload = PACGlobalLib.Transaction.Payload.ProTxUpServPayload;
+var ProTxUpServPayload = PacglobalLib.Transaction.Payload.ProTxUpServPayload;
 
 describe('ProTxUpServPayload', function () {
 

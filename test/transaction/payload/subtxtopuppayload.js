@@ -4,8 +4,8 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var PACGlobalLib = require('../../../index');
-var SubTxTopupPayload = PACGlobalLib.Transaction.Payload.SubTxTopupPayload;
+var PacglobalLib = require('../../../index');
+var SubTxTopupPayload = PacglobalLib.Transaction.Payload.SubTxTopupPayload;
 
 var validSubTxTopupPayloadJSON = {
   version: 1,

@@ -4,13 +4,13 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var PACGlobalLib = require('../../../index');
+var PacglobalLib = require('../../../index');
 
-var PrivateKey = PACGlobalLib.PrivateKey;
-var BufferUtil = PACGlobalLib.util.buffer;
-var Payload = PACGlobalLib.Transaction.Payload;
+var PrivateKey = PacglobalLib.PrivateKey;
+var BufferUtil = PacglobalLib.util.buffer;
+var Payload = PacglobalLib.Transaction.Payload;
 var SubTxTransitionPayload = Payload.SubTxTransitionPayload;
-var HashUtil = PACGlobalLib.util.hashUtil;
+var HashUtil = PacglobalLib.util.hashUtil;
 
 var CORRECT_SIGNATURE_SIZE = Payload.constants.COMPACT_SIGNATURE_SIZE;
 var privateKey = 'cSBnVM4xvxarwGQuAfQFwqDg9k5tErHUHzgWsEfD4zdwUasvqRVY';

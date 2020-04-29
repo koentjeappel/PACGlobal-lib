@@ -4,10 +4,10 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var PACGlobalLib = require('../../../index');
+var PacglobalLib = require('../../../index');
 
-var Transaction = PACGlobalLib.Transaction;
-var CommitmentTxPayload = PACGlobalLib.Transaction.Payload.CommitmentTxPayload;
+var Transaction = PacglobalLib.Transaction;
+var CommitmentTxPayload = PacglobalLib.Transaction.Payload.CommitmentTxPayload;
 
 var validCommitmentTxPayloadJSON = {
   version: 1,
